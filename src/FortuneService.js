@@ -1,14 +1,28 @@
 const fortunes = [
-  { text: "You will debug the un-debuggable.", category: "Techie" },
-  { text: "Coffee is the answer. Who cares what the question is.", category: "Funny" },
-  { text: "Your ideas are valid. Even if no one listens yet.", category: "Inspirational" },
-  { text: "One does not simply write bug-free code.", category: "Snarky" },
-  { text: "You're doing better than you think you are.", category: "Uplifting" },
-  { text: "Even the stars take billions of years to shine.", category: "Poetic" },
-  { text: "An empty file has infinite potential.", category: "Minimalist" },
+  "You will discover joy in the smallest moments.",
+  "An unexpected event will soon bring you clarity.",
+  "You are stronger than your doubts.",
+  "Every sunrise brings a new chance.",
+  "Take the risk—your future self will thank you.",
+  "Kindness always comes back around.",
+  "Your ideas will spark something brilliant.",
+  "Today’s patience is tomorrow’s strength.",
+  "You are already becoming who you need to be.",
+  "Creativity will flow when you stop overthinking.",
+  "Someone is inspired by your courage.",
+  "Silence holds more power than noise.",
+  "What you seek is also seeking you.",
+  "A small step today sets up a giant leap.",
+  "Celebrate how far you've come.",
+  "You light up more lives than you know.",
+  "There’s peace waiting in your pause.",
+  "Joy sneaks in when you're not looking.",
+  "You are the calm in someone’s storm.",
+  "Magic happens when you show up fully.",
+  "Your energy is a gift. Guard it."
 ];
 
-export const getFortune = () => {
-  const i = Math.floor(Math.random() * fortunes.length);
-  return fortunes[i];
-};
+export function getFortune() {
+  const index = Math.floor(Math.random() * fortunes.length);
+  return { text: fortunes[index] };
+}
