@@ -5,6 +5,7 @@ import cookieImg from './assets/cookie.png';
 import brokenCookieImg from './assets/broken-cookie.png';
 import crackSound from './assets/crack.mp3';
 
+///check
 
 function App() {
   const [fortune, setFortune] = useState(null);
